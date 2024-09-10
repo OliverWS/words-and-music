@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Words and Music: a CS50 Final Project</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+  <!-- jQuery CDN -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="js/utils.js"></script>
+
+  <!-- Javascript Markdown library sourced from https://github.com/evilstreak/markdown-js/releases -->
+  <script src="js/markdown.js"></script>
+
+  <script src="js/appear.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="//vjs.zencdn.net/4.10/video.js"></script>
+  <link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="thumbnail">
+    <img src="http://www.outdoor-photos.com/_photo/3731966.jpg" alt="Words and Music" />
+    <div class="caption post-content">
+      <h1>Words and Music:</h1>
+      <h2>An Interface Fusing Text, Music, Image, and Video</h2>
+      <h2 style="color: white;">By Jake Wilder-Smith</h2>
+    </div>
+  </div>
+
+  <div id="" class="container">
+
+    <div>
+      <div class="page-header">
+        <h1>How it works</h1>
+      </div>
+
+      <h2>Words &amp; Music is a simple tool to create elegant multimedia web-documents, interweaving text, music, image, and video.</h2>
+      <p class="lead">It uses a simple Markdown language that allows you to customize a creative multimedia experience. Words &amp; Music demonstrates the capability to seamlessly fuse words, music, image and video through example files, but if you'd like to try it out yourself, feel free to preview here by pasting sample text in the box below.
+        The customized Markdown language used by Words &amp; Music takes only about a minute to implement, and will make your text, image, audio, and video into a beautiful webpage that fades in and out of images and audio, and starts and stops videos as you scroll by.</p>
+        <ul>
+          <li>To create a header, simply place a # in front of your header text. The more #s you use, the smaller the header text will become.</li>
+          <li>
+            To link to an image, simply <code>![place title here](place link here)</code>
+          </li>
+          <li>
+            To link to a sound file, simply format as so:<code> [audio|repeat](place audio link here)</code> (for Dropbox links, make sure dl=1, not 0)!
+          </li>
+          <li>
+            To link to a video file, simply format as so: <code>[video|repeat](place video link here)</code> (for Dropbox links, make sure dl=1, not 0)!
+          </li>
+        </ul>
+        <div class="page-header">
+          <h2>Examples</h2>
+        </div>
+        <h2><a href="https://dl.dropboxusercontent.com/u/63103104/app/index.html?file=Example.txt" target="_blank">Example 1</a></h2>
+        <h2><a href="https://dl.dropboxusercontent.com/u/63103104/app/index.html?file=Example2.txt" target="_blank">Example 2</a></h2>
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <strong>Example 1</strong>
+                  <span class="pull-right">show</span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div  class="panel-body">
+                <pre><code class="language-markup" id="example1">
+                </code></pre>
+
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong>Example 2</strong>
+                  <span class="pull-right">show</span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+
+                <pre>
+                  <code class="language-markup" id="example2">
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong>Example 3</strong>
+                  <span class="pull-right">show</span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <pre><code class="language-markup" id="example3">
+                </code></pre>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+        <form role="form">
+          <div class="form-group">
+            <label for="exampleWebpagePreview">Markdown Text</label>
+            <textarea class="form-control" id="PreviewMarkdown" placeholder="Place text here" rows="8"></textarea>
+          </div>
+        </form>
+        <button id="previewBtn" class="btn btn-default">Preview my page</button>
+
+        <div id="content">
+
+
+        </div>
+      </div>
+      <script>
+        $(document).on("ready", function(){
+          console.log("Initializing...");
+          $("#example1").load("Example.txt", function(){
+            Prism.highlightAll();
+          });
+          $("#example2").load("Example2.txt", function(){
+            Prism.highlightAll();
+          });
+
+
+
+          $("#previewBtn").on("click", function(){
+            var text = $("#PreviewMarkdown").val();
+            var text = $("#PreviewMarkdown").val();
+            var cleanText = "";
+            text.split("\n").forEach(function(line){
+              cleanText += line.trim()+"\n";
+            });
+            $("#PreviewMarkdown").val(cleanText);
+            text = cleanText;
+            console.log(text);
+            $("#content").empty();
+            if(window.appears && window.appears.length > 0){
+              window.appears.forEach(function(a){a.destroy();});
+            }
+            parse(text, "#content");
+            $("#previewBtn").html("Update preview");
+            $("#PreviewMarkdown").on("input", function(){
+              var text = $("#PreviewMarkdown").val();
+              if(window.appears && window.appears.length > 0){
+                window.appears.forEach(function(a){a.destroy();});
+                window.appears = [];
+              }
+              $("#content").empty();
+              parse(text, "#content");
+            });
+
+          });
+
+
+
+          $('.thumbnail').hide().fadeIn(6000);
+        });
+      </script>
+
+    </body>
+    </html>
